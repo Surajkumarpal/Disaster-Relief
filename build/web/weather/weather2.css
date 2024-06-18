@@ -1,0 +1,700 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Fredoka+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+html,
+body {
+    background-color: #F7F7F7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Fredoka One', cursive;
+}
+
+
+/******************** scrollbar ********************/
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    width: 5px;
+}
+
+/******************** navbar ********************/
+
+/******************** container *******************/
+.container1 {
+    width: 85%;
+    background: #fff;
+    border-radius: 6px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    padding: 20px 40px 20px 40px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    animation: slideIn 0.5s ease forwards;
+    overflow: hidden;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.help-img {
+    float: right;
+    height: auto;
+    max-width: 30%;
+}
+
+strong {
+    font-size: 40px;
+}
+
+.text2 {
+    color: #e92828;
+}
+
+
+.button1 {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px 20px;
+    /* Adjust padding as needed */
+    text-decoration: none;
+    /* Removes underline from link */
+}
+
+.button1:hover{
+    color: rgb(0, 0, 0);
+}
+
+
+@media screen and (max-width: 800px) {
+    .help-img {
+        float: left;
+        max-width: 100%;
+        height: auto;
+        margin-right: 20px;
+
+    }
+
+    strong {
+        font-size: 30px;
+    }
+}
+
+/******************** news ********************/
+.news {
+    width: 30%; /* Set width to 100% for responsiveness */
+     /* Set maximum width */
+    margin: 20px auto; /* Center the container1 horizontally with some margin */
+}
+
+@media screen and (max-width: 800px){
+    .news{
+    width: 85%;
+    }
+}
+/******************** carousel ********************/
+
+/******************** welcome ********************/
+
+/******************** what we do ********************/
+
+/*** Panel cards ***/
+
+/******************** Our Vision ********************/
+
+/******************** Counter ********************/
+
+/******************** event ********************/
+
+/******************** Team or testimonials  ********************/
+
+/******************** become Volunteer ********************/
+
+/********************* footer ********************/
+
+/***** icone ***/
+
+.wrapper {
+    display: inline-flex;
+    padding-right: 10px;
+
+}
+
+.wrapper .icon {
+    position: relative;
+    background: #faf5f5;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(253, 249, 249, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -moz-transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -ms-transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -o-transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #fff;
+    color: #ffffff;
+    padding: 5px 8px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    border-radius: 4px;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -moz-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -ms-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -o-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #fff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transform: translate(-50%) rotate(45deg);
+    -moz-transform: translate(-50%) rotate(45deg);
+    -ms-transform: translate(-50%) rotate(45deg);
+    -o-transform: translate(-50%) rotate(45deg);
+    -webkit-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -moz-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -ms-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -o-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.01);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+    background: #3b5999;
+    color: #fff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+    background: #46c1f6;
+    color: #fff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+    background: #e1306c;
+    color: #fff;
+}
+
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+    background: #333333;
+    color: #fff;
+}
+
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+    background: #e92828;
+    color: #fff;
+}
+
+.container2{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    border-top:2px solid red;
+    box-shadow: black;
+}
+
+/* weather */
+.weather2{
+    width: 60%;
+    height:100%;
+    background: linear-gradient(45deg, rgba(183, 204, 248, 0.717), rgba(7, 43, 127, 0.679)), url("./clear.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Open Sans", sans-serif;
+    text-transform: capitalize;
+    border-right:5px solid red;
+}
+  .title{
+    background-color: white;
+    color: red;
+    font-size: 25px;
+    font-weight: bold;
+    border-bottom:3px solid red;
+    padding: 5px;
+    text-align: center;
+  }
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    width: 5px;
+  }
+  
+  .header {
+    position: relative;
+    top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+  #input {
+    font-size: 18px;
+    padding: 5px 10px;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    background: aliceblue;
+  }
+  
+  #search {
+    background: none;
+    padding: 5px 20px;
+    color: aliceblue;
+    outline: none;
+    background: red;
+    border: 1px solid red;
+    font-size: 17px;
+    border-radius: 15px;
+    cursor: pointer;
+    border: none;
+  }
+  
+  #search:hover {
+    background-color: white;
+    color: red;
+    font-size: bold;
+  }
+  
+  .weather {
+    text-align: center;
+    color: red;
+  }
+  
+  #city {
+    font-size: 30px;
+  }
+  
+  .location-btn {
+    height: 40px; 
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.3rem;
+    color: white;
+    background: red;
+    transition: 0.2s ease;
+    border: 2px solid white;
+    border-radius: 4px;
+    text-align: center;
+    padding:0 0 20px 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  
+  .location-btn:hover {
+    background-color: white;
+    color: red;
+    font-size: bold;
+    border: 2px solid red;
+  }
+  
+  .weather img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: rgba(240, 248, 255, 0.408);
+  }
+  
+  #temperature {
+    font-size: 50px;
+    margin: 0;
+    margin-left: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .temp-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+  }
+  
+  #clouds {
+    font-size: 20px;
+    background: white;
+    color: red;
+    border: 2px solid black;
+    padding: 2px 20px;
+    border-radius: 15px;
+  }
+  
+  main {
+    display: grid;
+    grid-column-gap: 25px;
+    grid-template-columns: 1fr 5px 1fr;
+    align-items: center;
+    margin: 0 50px;
+    color: red;
+  }
+  
+  .next {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .next p, .next h3 {
+    margin: 3px 0;
+  }
+  
+  .forecstD {
+    margin: 20px 50px;
+    color: red;
+  }
+  
+  .weekF {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top:10px;
+  }
+
+  
+  .cast-header {
+    color: aliceblue;
+    background: red;
+    width: -moz-max-content;
+    width: max-content;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .forecstD  .cast-header{
+    margin-top:30px;
+}
+  
+  .divider1, .divider2 {
+    background: red;
+    height: 200px;
+    border-radius: 5px;
+  }
+  
+  .divider2 {
+    height: 5px;
+    width: 30%;
+    margin: 0 auto;
+    
+  }
+  
+  .time, .date {
+    color: black;
+  }
+  
+  .desc {
+    color: red;
+  }
+
+  .news{
+    width:40%;
+    position: relative; top:-20px;
+}
+
+
+@media(max-width:520px){
+    .container2{
+        display: flex;
+        flex-direction: column;
+        height:2100px;
+        border: none;
+    }
+    .weather2 { 
+        width:89%;
+        height: 1350px;
+        background-size: cover; 
+        border-right: none;
+        margin:0 20px 0 5%;
+        border:2px solid red;
+        }
+    .weekF{
+       display: flex;
+       flex-direction: column;
+       position: relative;
+       left:50px;
+    }
+    #input{
+        width:130px; height: 20px; font-size: 15px; 
+        position: relative; left:7px;
+    }
+    #city{
+        font-size: 20px;
+        position: relative ; top:50px;
+    }
+    .location-btn{
+        font-size: 10px;
+        height: 0px;
+    }
+    #search{
+        font-size: 10px;
+    }
+.temp-box{
+    position: relative;
+    right:30px; top:50px;
+}
+#temperature{
+    font-size: 30px;
+}
+.temp-box img{
+    width:60px;
+    height:60px;
+}
+#clouds{
+    font-size: 10px;
+}
+
+.next{
+    position: relative;
+    top:20px; 
+}
+.next p {
+    margin-left: 30px;
+}
+.cast-header{
+    font-size: 10px;
+}
+.forecstH .cast-header{
+     position: relative;
+     left:24px; 
+}
+.forecstD .cast-header{
+     position: relative;
+     left:40px; 
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+.divider1{
+    position: relative;
+    right:50px; height:90px;
+} 
+.news{
+    width:89%;
+}
+
+}
+@media (min-width: 521px) and (max-width: 724px){
+    .container2{
+        display: flex;
+        flex-direction: column;
+        height:2100px;
+        border: none;
+    }
+    .weather2{
+        width:89%;
+        height: 1550px;
+        background-size: cover; 
+        border-right: none;
+        margin:0 20px 0 5%;
+        border:2px solid red;
+    }
+    .weekF{
+        display: flex;
+        flex-direction: column;
+     }
+     main{
+        display: flex;
+        flex-direction: column;
+    }
+    .temp-box{
+        position: relative;
+       top:50px;
+    }
+    #city{
+        position: relative;
+        top:50px;
+    }
+    .forecstH{
+        position: relative; top:-100px;
+    }
+    #clouds{
+        position: relative;top:30px;
+    }
+    .news{
+        width:89%;
+    }
+}
+
+/* @media (min-width: 725px) and (max-width: 768px) {
+    .weather2 { 
+        height: 900px;
+        background-size: cover; 
+    .temp-box{
+        position: relative;
+        right:30px; 
+    }
+    #temperature{
+        font-size: 30px;
+    }
+    .temp-box img{
+        width:60px;
+        height:60px;
+    }
+    #clouds{
+        font-size: 10px;
+    }
+    .location-btn{
+        font-size: 15px;
+        height: 5px;
+    }
+    #search{
+        font-size: 10px;
+    }
+
+    .weekF{
+        position: relative; top:30px;
+    }
+    #input{
+        width:130px; height: 20px; font-size: 15px; 
+        position: relative; left:7px;
+    }
+}
+.news{
+  height:1000px;
+}
+} */
+
+@media (min-width: 725px) and (max-width: 860px){
+    .container2{
+        display: flex;
+        flex-direction: column;
+        height:1300px;
+        border: none;
+    }
+    .weather2{
+        width:89%;
+        height: 750px;
+        background-size: cover; 
+        border-right: none;
+        margin:0 20px 0 5%;
+        border:2px solid red;
+    }
+    .next{
+        position: relative;
+        right:30px;
+        font-size: 15px;
+    }
+    .temp-box{
+        position: relative;
+        right:30px;
+    }
+    .divider1{
+        position: relative;
+        right:30px;
+    }
+    #temperature{
+         font-size: 25px;
+    }
+    .temp-box img{
+        width:70px;
+        height:50px;
+    }
+    #clouds{
+        font-size: 10px;
+    }
+    .news{
+        width:89%;
+    }
+}
